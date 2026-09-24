@@ -15,6 +15,7 @@ No build command, no functions, no secrets.
 | `index.html` | The whole page |
 | `styles.css` | Styles; palette and type tokens at the top |
 | `flight.js` | The practice flight: the letter types itself, the raven departs and returns |
+| `support.js` | The Support dialog; posts the letter to Formspree |
 | `images/` | Crest, courier portrait, wax seal, desktop wallpaper, icons, OG image |
 | `fonts/` | Self-hosted Cinzel and EB Garamond subsets (SIL Open Font License) |
 | `raven/` | Nine sprite sheets (2400×2000 WebP, 6×5 cells of 400px) — see below |
@@ -56,5 +57,11 @@ then open <http://localhost:8123>. Nothing to build or install.
 ## Before launch
 
 - Point the download buttons at the Mac App Store listing.
-- Add the Support and Privacy pages the footer links to. A hosted
-  privacy policy on this domain is required for Google OAuth verification.
+- Support is a dialog posted to Formspree (the same free service as the
+  BreakDown site). To finish it: create the `QuillandWing@stolenidol.com`
+  alias, then in the Formspree dashboard add a new form named Quill & Wing
+  that delivers to that alias, and paste its ID into the form's `action`
+  in `index.html` (replace `YOUR_FORM_ID`). Submissions carry the subject
+  "Quill & Wing — Support" and the sender's address as reply-to.
+- Add the Privacy page the footer links to. A hosted privacy policy on this
+  domain is required for Google OAuth verification.

@@ -225,13 +225,52 @@
   <div class="wrap footer-row">
     <div class="tag">Aerial correspondence, since 1783.</div>
     <nav aria-label="Footer">
-      <a href="#support">Support</a>
+      <a href="#support" data-support>Support</a>
       <a href="#privacy">Privacy</a>
     </nav>
     <div class="copy">© 2026 Quill &amp; Wing · www.quillandwing.com</div>
   </div>
 </footer>
 
+<!-- Support: a short letter to us, delivered by Formspree (same service as the BreakDown site).
+     Set the form's action to this site's own Formspree form ID before launch. -->
+<dialog class="support" id="support-dialog" aria-labelledby="support-title">
+  <div class="support-inner">
+    <button type="button" class="support-close" data-support-close aria-label="Close">×</button>
+    <form id="support-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <div class="eyebrow">Support</div>
+      <h2 id="support-title">Write to us.</h2>
+      <p class="support-lede">A question, a snag, a kind word. A real person reads every letter.</p>
+      <label class="support-field">
+        <span>Your name</span>
+        <input name="name" type="text" required autocomplete="name">
+      </label>
+      <label class="support-field">
+        <span>Your email</span>
+        <input name="email" type="email" required autocomplete="email" id="support-email">
+      </label>
+      <label class="support-field">
+        <span>Your message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <input type="hidden" name="_subject" value="Quill &amp; Wing — Support">
+      <input type="hidden" name="_replyto" id="support-replyto">
+      <input type="text" name="_gotcha" class="support-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="support-error" id="support-error" hidden>The letter did not go through. Please try again in a moment, or write to QuillandWing@stolenidol.com.</p>
+      <div class="support-actions">
+        <button type="submit" class="btn btn-gold btn-lg" id="support-submit">Send the letter</button>
+      </div>
+    </form>
+    <div class="support-sent" id="support-sent" hidden>
+      <img src="images/seal.webp" width="200" height="200" alt="">
+      <h2>Your letter is on its way.</h2>
+      <p>Thank you. We will write back soon.</p>
+      <button type="button" class="btn btn-ghost btn-sm" data-support-close>Close</button>
+    </div>
+  </div>
+</dialog>
+
 <script src="flight.js" defer></script>
+<script src="support.js" defer></script>
 </body>
 </html>
