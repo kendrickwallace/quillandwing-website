@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+
+# Claude Design canvas export — source material, not site content.
+# Large bundled payload; keep it off the public repo.
+Designs/
+
+# Source imagery (the full-resolution wallpaper original). The site uses images/.
+Assets/
+
+# Never. This repo is public and has no backend.
+.env
+.env.*
+*.pem
+node_modules/
+
+# Internal working notes — not for the public repo.
+docs/
