@@ -57,11 +57,10 @@ then open <http://localhost:8123>. Nothing to build or install.
 ## Before launch
 
 - Point the download buttons at the Mac App Store listing.
-- Support is a dialog posted to Formspree (the same free service as the
-  BreakDown site). To finish it: create the `QuillandWing@stolenidol.com`
-  alias, then in the Formspree dashboard add a new form named Quill & Wing
-  that delivers to that alias, and paste its ID into the form's `action`
-  in `index.html` (replace `YOUR_FORM_ID`). Submissions carry the subject
-  "Quill & Wing — Support" and the sender's address as reply-to.
+- Support is a dialog posted to Formspree (the same free account as the
+  BreakDown site; form `mvkgqwnp`, delivering to kenwallacefilms@me.com for now).
+  Submissions carry the subject "Quill & Wing — Support" and the sender's
+  address as reply-to. To change the recipient, edit the form in the
+  Formspree dashboard; the page never needs to change.
 - Add the Privacy page the footer links to. A hosted privacy policy on this
   domain is required for Google OAuth verification.
