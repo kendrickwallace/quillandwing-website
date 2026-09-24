@@ -215,15 +215,8 @@ function qwArrival(frame, count) {
     start();
   }
 
-  // "Watch a practice flight" in the hero, and the wax seal on the desk.
+  // Pressing the wax seal on the desk sends the letter now.
   Array.prototype.forEach.call(document.querySelectorAll('[data-send]'), function (btn) {
-    btn.addEventListener('click', function () {
-      if (btn.getAttribute('data-send') === 'watch') {
-        var desk = document.getElementById('desk');
-        if (desk) desk.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
-        start();
-      }
-      startSend();
-    });
+    btn.addEventListener('click', startSend);
   });
 })();
