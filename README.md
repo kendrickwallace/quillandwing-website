@@ -56,5 +56,5 @@ then open <http://localhost:8123>. Nothing to build or install.
 ## Before launch
 
 - Point the download buttons at the Mac App Store listing.
-- Add the Support, Privacy and Press kit pages the footer links to. A hosted
+- Add the Support and Privacy pages the footer links to. A hosted
   privacy policy on this domain is required for Google OAuth verification.
