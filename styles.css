@@ -229,3 +229,18 @@ h2{margin:0;font-size:clamp(32px,3.5vw,44px);line-height:1.14;font-weight:400;co
 .support-sent h2{font-size:30px}
 .support-sent p{margin:0 0 10px;font-style:italic;color:var(--ink-3)}
 @media (max-width:480px){.support-inner{padding:28px 20px 24px}.support h2{font-size:30px}}
+
+/* Privacy policy — as a dialog on the home page and as its own page (privacy.html) */
+.support.policy{width:min(760px,calc(100% - 32px))}
+.support.policy .support-inner{max-height:calc(100vh - 80px);overflow-y:auto;padding-right:44px}
+.policy-body h2{font-size:clamp(32px,4vw,44px);line-height:1.1;margin:0 0 6px}
+.policy-body .dateline{margin:0 0 28px;font-size:16px;line-height:1.5;color:var(--ink-3);padding-bottom:18px;border-bottom:3px double var(--rule)}
+.policy-body h3{font-family:var(--display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin:32px 0 10px}
+.policy-body p,.policy-body li{font-size:17px;line-height:1.55;color:var(--ink)}
+.policy-body p{margin:0 0 14px}
+.policy-body ul{margin:0 0 14px;padding-left:22px}
+.policy-body li{margin-bottom:6px}
+.policy-body a{color:var(--wine);text-decoration:underline;text-underline-offset:2px}
+.policy-page .masthead nav a{font-size:17px;color:var(--ink-2);text-decoration:none}
+.policy-main{max-width:760px;margin:0 auto;padding:56px var(--gutter) 88px}
+@media (max-width:480px){.support.policy .support-inner{padding-right:20px}}

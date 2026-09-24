@@ -29,6 +29,21 @@
   // A click on the dimmed backdrop closes the dialog; Escape already does.
   dialog.addEventListener('click', function (e) { if (e.target === dialog) close(); });
 
+  // The privacy policy: the footer link opens it as a window here; the same text
+  // lives at privacy.html for anyone who needs a plain URL (or has no JavaScript).
+  var privacy = document.getElementById('privacy-dialog');
+  if (privacy && typeof privacy.showModal === 'function') {
+    var openPrivacy = function () { privacy.showModal(); privacy.querySelector('.support-inner').scrollTop = 0; };
+    Array.prototype.forEach.call(document.querySelectorAll('[data-privacy]'), function (a) {
+      a.addEventListener('click', function (e) { e.preventDefault(); openPrivacy(); });
+    });
+    Array.prototype.forEach.call(privacy.querySelectorAll('[data-dialog-close]'), function (b) {
+      b.addEventListener('click', function () { privacy.close(); });
+    });
+    privacy.addEventListener('click', function (e) { if (e.target === privacy) privacy.close(); });
+    if (location.hash === '#privacy') openPrivacy();
+  }
+
   email.addEventListener('input', function () { replyto.value = email.value; });
 
   form.addEventListener('submit', function (e) {

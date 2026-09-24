@@ -15,7 +15,10 @@ No build command, no functions, no secrets.
 | `index.html` | The whole page |
 | `styles.css` | Styles; palette and type tokens at the top |
 | `flight.js` | The practice flight: the letter types itself, the raven departs and returns |
-| `support.js` | The Support dialog; posts the letter to Formspree |
+| `support.js` | The Support and Privacy dialogs; Support posts the letter to Formspree |
+| `privacy.html` | The privacy policy as its own page (the URL for Google / Apple review) |
+| `Quill and Wing - Privacy Policy.md` | The policy's source text — edit this, then run the script below |
+| `scripts/build-privacy.py` | Renders the policy into `privacy.html` and the home-page dialog |
 | `images/` | Crest, courier portrait, wax seal, desktop wallpaper, icons, OG image |
 | `fonts/` | Self-hosted Cinzel and EB Garamond subsets (SIL Open Font License) |
 | `raven/` | Nine sprite sheets (2400×2000 WebP, 6×5 cells of 400px) — see below |
@@ -62,5 +65,7 @@ then open <http://localhost:8123>. Nothing to build or install.
   Submissions carry the subject "Quill & Wing — Support" and the sender's
   address as reply-to. To change the recipient, edit the form in the
   Formspree dashboard; the page never needs to change.
-- Add the Privacy page the footer links to. A hosted privacy policy on this
-  domain is required for Google OAuth verification.
+- Privacy: the footer opens the policy as a window on the home page; the same
+  text is at `privacy.html` (and `/#privacy` opens the window directly). Give
+  Google and Apple `https://www.quillandwing.com/privacy.html`. To change the
+  policy, edit the Markdown file and run `python3 scripts/build-privacy.py`.
