@@ -184,12 +184,13 @@ h2{margin:0;font-size:clamp(32px,3.5vw,44px);line-height:1.14;font-weight:400;co
 .closing-cta{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .closing-cta .frame{padding:4px;border:2px solid var(--gold)}
 .closing-cta .frame .btn{border:0;border-radius:0}
-.closing-cta small{font-size:15px;color:var(--paper)}
+.closing-cta small{font-size:15px;line-height:1.5;color:var(--paper);text-align:right}
 @media (max-width:900px){
   .closing-row{flex-direction:column;align-items:center;text-align:center}
   .closing-lead{flex-direction:column;gap:20px}
   .closing-lead>div{align-items:center}
   .closing-cta{align-items:center}
+  .closing-cta small{text-align:center}
 }
 @media (max-width:480px){.btn-lg{white-space:normal;height:auto;min-height:52px;padding:12px 20px;text-align:center}}
 
