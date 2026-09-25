@@ -40,7 +40,7 @@
     <a href="#top" aria-label="Quill &amp; Wing home"><img src="images/crest.webp" width="480" height="499" alt="Quill &amp; Wing — Aerial correspondence, since 1783"></a>
   </div>
   <div class="cta">
-    <a href="#download" class="btn btn-gold btn-sm">Download for Mac</a>
+    <a href="#download" data-coming-soon class="btn btn-gold btn-sm">Download for Mac</a>
   </div>
 </header>
 
@@ -51,7 +51,7 @@
   <h1>A letter worth sending.</h1>
   <p class="lede">Quill &amp; Wing is the original airmail. Write your message, seal it in wax, and your personal feathered courier takes it from there.</p>
   <div class="actions">
-    <a href="#download" class="btn btn-gold btn-lg">Download for Mac</a>
+    <a href="#download" data-coming-soon class="btn btn-gold btn-lg">Download for Mac</a>
   </div>
 </section>
 
@@ -213,7 +213,7 @@
       </div>
     </div>
     <div class="closing-cta">
-      <div class="frame"><a href="#download" class="btn btn-gold btn-lg">Download on the Mac App Store</a></div>
+      <div class="frame"><a href="#download" data-coming-soon class="btn btn-gold btn-lg">Download on the Mac App Store</a></div>
       <small>$2.99 · Requires macOS 13 Ventura or later · Apple silicon, M1 or newer</small>
     </div>
   </div>
@@ -313,6 +313,18 @@
   </div>
 </dialog>
 <!-- privacy:end -->
+
+<!-- Coming soon: every download button opens this until the App Store listing exists. -->
+<dialog class="support coming" id="coming-dialog" aria-labelledby="coming-title">
+  <div class="support-inner">
+    <button type="button" class="support-close" data-dialog-close aria-label="Close">×</button>
+    <img src="images/seal.webp" width="200" height="200" alt="">
+    <div class="eyebrow">Mac App Store</div>
+    <h2 id="coming-title">Coming soon!</h2>
+    <p>Quill &amp; Wing is on its way to the Mac App Store.</p>
+    <button type="button" class="btn btn-ghost btn-sm" data-dialog-close>Close</button>
+  </div>
+</dialog>
 
 <script src="flight.js" defer></script>
 <script src="support.js" defer></script>

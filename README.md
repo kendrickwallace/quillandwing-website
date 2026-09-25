@@ -59,7 +59,9 @@ then open <http://localhost:8123>. Nothing to build or install.
 
 ## Before launch
 
-- Point the download buttons at the Mac App Store listing.
+- The download buttons open a Coming soon window (`#coming-dialog`). When the
+  App Store listing exists, change their `href` to it and remove the
+  `data-coming-soon` attribute from each; the window can then be deleted.
 - Support is a dialog posted to Formspree (the same free account as the
   BreakDown site; form `mvkgqwnp`, delivering to kenwallacefilms@me.com for now).
   Submissions carry the subject "Quill & Wing — Support" and the sender's

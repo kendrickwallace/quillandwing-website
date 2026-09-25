@@ -65,4 +65,15 @@
         submit.textContent = 'Send the letter';
       });
   });
+  // Coming soon: the download buttons open this until the App Store listing exists.
+  var coming = document.getElementById('coming-dialog');
+  if (coming && typeof coming.showModal === 'function') {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-coming-soon]'), function (a) {
+      a.addEventListener('click', function (e) { e.preventDefault(); coming.showModal(); });
+    });
+    Array.prototype.forEach.call(coming.querySelectorAll('[data-dialog-close]'), function (b) {
+      b.addEventListener('click', function () { coming.close(); });
+    });
+    coming.addEventListener('click', function (e) { if (e.target === coming) coming.close(); });
+  }
 })();
