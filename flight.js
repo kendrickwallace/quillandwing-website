@@ -9,7 +9,7 @@ var QW = { W: 1280, H: 800, BOX: 420, AX: 1130, AY: 560, ORTHO: 6.4, FS: 400, CO
   arrive: { start: 124, n: 91, count: 180, fps: 30 },
   look: { start: 215, n: 24, count: 48, fps: 24 },
   PERCHED: 239, PERCH: 240 };
-var QW_LETTER = "Meet me by the old oak tree at four.\nBring the good biscuits.";
+var QW_LETTER = "Meet me at the marina at 8am for a sail.\nBring strong coffee.";
 
 function qwFlight(delta, frame) {
   var W = QW.W, H = QW.H, box = QW.BOX, ax = QW.AX, ay = QW.AY;
