@@ -259,6 +259,7 @@ h2{margin:0;font-size:clamp(32px,3.5vw,44px);line-height:1.14;font-weight:400;co
 .courier-card{align-items:center;text-align:center;gap:16px;background:var(--panel)}
 .courier-frame{width:100%;aspect-ratio:2/3;background:var(--ground);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .courier-frame img{width:90%;height:90%;object-fit:contain}
+.courier-frame--owl img{width:80%;height:80%}
 .courier-card h3{margin:0;font-size:26px;line-height:32px;font-weight:400}
 .courier-card p{margin:0;font-size:17px;line-height:26px;font-style:italic;color:var(--ink-3)}
 @media (max-width:700px){.courier-grid{grid-template-columns:1fr;gap:20px;max-width:420px}}
