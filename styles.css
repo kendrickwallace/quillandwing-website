@@ -262,4 +262,15 @@ h2{margin:0;font-size:clamp(32px,3.5vw,44px);line-height:1.14;font-weight:400;co
 .courier-frame--owl img{width:80%;height:80%}
 .courier-card h3{margin:0;font-size:26px;line-height:32px;font-weight:400}
 .courier-card p{margin:0;font-size:17px;line-height:26px;font-style:italic;color:var(--ink-3)}
-@media (max-width:900px){.courier-grid{grid-template-columns:1fr;gap:20px;max-width:420px}}
+@media (max-width:900px){
+  .courier-grid{gap:12px}
+  .courier-card{padding:12px 10px 16px;gap:10px}
+  .courier-card h3{font-size:19px;line-height:24px}
+  .courier-card p{font-size:13px;line-height:18px}
+}
+@media (max-width:480px){
+  .courier-grid{gap:8px}
+  .courier-card{padding:8px 6px 12px;gap:8px}
+  .courier-card h3{font-size:16px;line-height:20px}
+  .courier-card p{font-size:12px;line-height:16px}
+}
